@@ -97,7 +97,7 @@ function App() {
       imgSrc="https://picsum.photos/400/250" 
       imgAlt="Card Alt bilgisi"
       dataId="111"
-     >
+     > 
       <p>Lorem, ipsum dolor.</p>
       <p>Eius, officiis commodi!</p>
       <p>Libero, non quibusdam.</p>      
