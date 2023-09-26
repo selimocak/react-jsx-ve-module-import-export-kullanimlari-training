@@ -1,7 +1,7 @@
 // https://react.dev/learn/importing-and-exporting-components 
 
 import Button from "./Button"
-import USERS from "../data/users" 
+import {USERS} from "../data/"   
 
 const ITEMS = [
   1,2,3
