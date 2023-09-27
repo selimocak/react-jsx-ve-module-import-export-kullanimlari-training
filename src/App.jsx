@@ -4,8 +4,9 @@ import './App.css'
 import AsdUserList, {SingleUser, ITEMS } from "./components/UserList"  
 import ButtonComponent from "./components/Button"
 import ImgThumbnail from "./components/imgThumbnail"
-import { IMAGES } from "./data/" 
+import { IMAGES, INFO } from "./data/" 
 import Card from "./components/Card"
+import ConditionalRenderedUserList from "./components/ConditionalRenderedUserList"
 
 function App() {
   // 1: Return ederken HTML yapisini Return etmen gerekiyor. (JSX) 
@@ -101,7 +102,22 @@ function App() {
       <p>Lorem, ipsum dolor.</p>
       <p>Eius, officiis commodi!</p>
       <p>Libero, non quibusdam.</p>      
-     </Card>   
+     </Card>
+
+     <hr />
+
+     <ConditionalRenderedUserList isActive={true} isLoading={true} />          
+     <hr />
+     {/* // https://developer.mozilla.org/en-US/Web/JavaScript/Reference/Operators/Optional_chaining */}
+     <h2>Optional Chaining</h2> 
+     <p>Not: INFO icindeki Products bilgisi aslinda yok..</p> 
+     {  
+      INFO.products?.map(
+      (product, index) => <li key={index}>{product}</li>
+      )
+     } 
+
+     <hr />
   </> 
   )  
 }  
