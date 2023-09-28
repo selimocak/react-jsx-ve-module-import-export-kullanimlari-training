@@ -3,7 +3,7 @@ import './App.css'
 // import UserList, { SingleUser, ITEMS } from "./components/UserList"  
 import AsdUserList, {SingleUser, ITEMS } from "./components/UserList"  
 import ButtonComponent from "./components/Button"
-import ImgThumbnail from "./components/imgThumbnail"
+import ImgThumbnail from "./components/imgThumbnail" 
 import { IMAGES, INFO } from "./data/" 
 import Card from "./components/Card"
 import ConditionalRenderedUserList from "./components/ConditionalRenderedUserList"

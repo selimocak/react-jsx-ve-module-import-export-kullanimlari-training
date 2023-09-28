@@ -1,3 +1,5 @@
+// ::: useState kullanimi hakkinda...
+
 import { useState } from "react"
 
   /* 
