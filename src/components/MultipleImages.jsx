@@ -7,11 +7,17 @@ export default function MultipleImages() {
   const [imageCounter, setImageCounter] = useState(1)
 
   function handleAddImage() {
-    setImageCounter(imageCounter + 1)
-  }
+  //   setImageCounter(
+  //     (prev) => {
+  //       return prev + 1
+  //     }
+  //   )
+  setImageCounter(prev => prev + 1)
+  } 
+
   
   function handleSubtrackImage() {
-    setImageCounter(imageCounter - 1)
+    setImageCounter()
   }
 
   return(<>
